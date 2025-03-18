@@ -1,0 +1,90 @@
+body {
+    background-image: url('../images/background.jpg'); 
+    background-size: cover; /* Масштабує зображення на весь екран */
+    background-position: center; /* Центрує */
+    background-repeat: no-repeat; /* Не повторює */
+    background-attachment: fixed; /* Фіксує фон при прокрутці */
+    font-family: 'Press Start 2P', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ece7e2; /* Основний колір тексту */
+}
+
+header { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px; 
+    background-color: #391f63; 
+    border-bottom: 2px solid #9c918f;
+    font-family: 'Press Start 2P';
+}
+
+.player { 
+    margin-left: auto; 
+}
+
+nav a { 
+    margin: 0 15px; 
+    color: #ece7e2; 
+    text-decoration: none; 
+}
+
+.sub-header { 
+    background-color: #333; 
+    padding: 10px; 
+    text-align: center; 
+}
+
+h1 {
+    font-family: 'VT323', monospace;
+    font-size: 3rem;
+    color: #823ce6;
+    text-transform: uppercase;
+    animation: glitch 0.5s infinite alternate;
+}
+
+header h1 {
+    font-size: 48px;
+}
+
+#about {
+    text-align: center;
+    font-family: 'Press Start 2P';
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.7); /* напівпрозорий чорний фон */
+    border-radius: 10px; /* округлені кути */
+    max-width: 80%;
+    margin: 30px auto;
+}
+
+#about h2 {
+    color: #c85df9;
+    font-size: 2rem;
+    font-family: 'Press Start 2P';
+    text-shadow: 2px 2px 4px #ffffff, -2px -2px 4px #ffffff, 
+                 2px -2px 4px #ffffff, -2px 2px 4px #ffffff; /* Білий контур */
+}
+
+#about p {
+    color: #c85df9;
+    font-family: 'Press Start 2P';
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 4px #ffffff, -2px -2px 4px #ffffff, 
+                 2px -2px 4px #ffffff, -2px 2px 4px #ffffff; /* Білий контур */
+}
+
+footer {
+    text-align: center;
+    color: #c85df9;
+    text-shadow: 2px 2px 4px #ffffff, -2px -2px 4px #ffffff, 
+                 2px -2px 4px #ffffff, -2px 2px 4px #ffffff; /* Білий контур */
+}
+
+@keyframes glitch {
+    0% { text-shadow: 2px 2px purple, -2px -2px purple; }
+    25% { text-shadow: -2px -2px purple, 2px 2px purple; }
+    50% { text-shadow: 2px -2px purple, -2px 2px purple; }
+    75% { text-shadow: -2px 2px purple, 2px -2px purple; }
+    100% { text-shadow: 2px 2px purple, -2px -2px purple; }
+}
