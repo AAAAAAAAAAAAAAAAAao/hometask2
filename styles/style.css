@@ -22,19 +22,24 @@ header {
 }
 
 .player { 
-    margin-left: auto; 
+	position: fixed;
+    bottom: 10px;
+    right: 10px;
+	z-index: 1;
 }
 
 nav a { 
+	padding: 5px;
     margin: 0 15px; 
-    color: #c85df9; 
+    color: #ece7e2; 
     text-decoration: none; 
+	outline: 2px solid #c85df9;
+	background-color: #823ce6;
 }
 
 nav a:hover{
-	margin: 0 15px; 
-    color: #ece7e2; 
-    text-decoration: none; 
+    background-color: #c85df9;
+	outline: 2px solid #823ce6;
 }
 
 .sub-header { 
@@ -49,6 +54,7 @@ h1 {
     color: #823ce6;
     text-transform: uppercase;
     animation: glitch 0.5s infinite alternate;
+	
 }
 
 header h1 {
@@ -62,7 +68,7 @@ header h1 {
     background-color: rgba(0, 0, 0, 0.7); /* напівпрозорий чорний фон */
     border-radius: 10px; /* округлені кути */
     max-width: 80%;
-    margin: 30px auto;
+    margin: 1000px auto; /*30px auto*/
 }
 
 #about h2 {
@@ -94,4 +100,8 @@ footer {
     50% { text-shadow: 2px -2px purple, -2px 2px purple; }
     75% { text-shadow: -2px 2px purple, 2px -2px purple; }
     100% { text-shadow: 2px 2px purple, -2px -2px purple; }
+}
+.menu {
+	position: sticky;
+	top:0;
 }
