@@ -18,6 +18,7 @@ header {
     background-color: #391f63; 
     border-bottom: 2px solid #9c918f;
     font-family: 'Press Start 2P';
+	
 }
 
 .player { 
@@ -26,6 +27,12 @@ header {
 
 nav a { 
     margin: 0 15px; 
+    color: #c85df9; 
+    text-decoration: none; 
+}
+
+nav a:hover{
+	margin: 0 15px; 
     color: #ece7e2; 
     text-decoration: none; 
 }
