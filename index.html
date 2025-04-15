@@ -124,5 +124,17 @@
             }
         });
     </script>
+	<button id="toggleTheme" class="theme-toggle">💡 Light Mode</button>
+	<script>
+  const btn = document.getElementById('toggleTheme');
+  let dark = true;
+
+  btn.addEventListener('click', () => {
+    document.body.classList.toggle('light-theme');
+    dark = !dark;
+    btn.textContent = dark ? '💡 Light Mode' : '🌑 Dark Mode';
+  });
+</script>
+
 </body>
 </html>
