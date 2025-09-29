@@ -30,3 +30,32 @@ allElements.forEach(el => {
     });
 });
 
+window.addEventListener("load", () => {
+    setTimeout(show_images, 5000);
+});
+
+function show_images() {
+    let imagesUrl = [
+        "https://upload.wikimedia.org/wikipedia/commons/7/74/A-Cat.jpg",
+        "https://t4.ftcdn.net/jpg/02/66/72/41/360_F_266724172_Iy8gdKgMa7XmrhYYxLCxyhx6J7070Pr8.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeKOOpLy92UjzQxq8NCxgxOQJbj_YVdfHO_g&s",
+        "https://cms.bps.org.uk/sites/default/files/2022-09/Grumpy%20cat%202.jpeg"
+    ];
+
+    const gallery = document.getElementById("gallery");
+
+    const fragment = document.createDocumentFragment();
+
+    imagesUrl.forEach((url, index) => {
+        setTimeout(() => {
+            const img = document.createElement("img");
+            img.src = url;
+            img.alt = `Image ${index + 1}`;
+            img.style.margin = "10px";
+            fragment.appendChild(img);
+            gallery.appendChild(fragment);
+        }, index * 1000);
+    });
+}
+
+
